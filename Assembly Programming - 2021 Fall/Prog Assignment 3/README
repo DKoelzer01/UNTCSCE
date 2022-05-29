@@ -1,0 +1,11 @@
+Daniel Koelzer
+dlk0138
+10/28/2021
+
+Programming Assignment 3
+
+Compile and run using DS-5
+Testing can be accomplished by:
+a) Changing the value in the arr: declaration (line 4), and MOV X20 #4 (line 18). Ensure X20 is the same value as the length of arr.
+b) Change the values of A and B by changing the values on lines 13 and 14 respectively.
+c) Change the value of n by changing the value on line 9.
