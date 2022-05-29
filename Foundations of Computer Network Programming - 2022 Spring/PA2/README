@@ -1,0 +1,12 @@
+2/22/2022
+CSCE 3530 -- PA 2
+
+Compile using "make"
+Clean files using "make clean"
+NOTE: If using "make" results in "clock skew detected", do "touch *" to update the time stamp, or wait for the defined amount of time.
+
+Run client on CSE04 with ./wcclient
+
+Specify URL, then specify port.
+Connection will be attempted, if response 200 recieved, add to list, and save landing page to cache.
+If there are more than 5 items in the cache, delete the oldest item and rewrite list.txt

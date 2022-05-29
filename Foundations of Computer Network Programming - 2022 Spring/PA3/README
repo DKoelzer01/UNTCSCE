@@ -1,0 +1,8 @@
+3/30/2022
+CSCE 3530 -- PA 3
+
+Compile using "make"
+Clean files using "make clean"
+NOTE: If using "make" results in "clock skew detected", do "touch *" to update the time stamp, or wait for the defined amount of time.
+
+Run client on CSE04 with ./emclient

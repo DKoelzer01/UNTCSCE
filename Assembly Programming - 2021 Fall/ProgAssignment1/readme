@@ -1,0 +1,11 @@
+Daniel Koelzer
+9/16/2021
+dlk0138
+
+Compile the program using the provided make file with the command "make"
+Run the 4 programs using 
+	./prog1.out
+	./prog2.out
+	./prog3.out
+	./prog4.out
+Delete output files with "make clean"

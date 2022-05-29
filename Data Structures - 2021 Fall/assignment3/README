@@ -1,0 +1,16 @@
+Daniel Koelzer
+dlk0138
+10/17/2021
+
+Assignment 2
+
+Insertion, Rotation/Balancing, Minimum functions all implemented fully
+Deletion implemented but disabled due to error moving new node to deleted node's previous position, resulting in node being its own child.
+
+Use the following command to compile:
+
+$ g++ avl.cpp
+
+Use the following command to test:
+
+./a.out input1.txt

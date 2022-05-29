@@ -1,0 +1,14 @@
+4/13/2022
+Daniel Koelzer
+CSCE 3530 -- PA 4
+
+Compile using "make"
+Clean files using "make clean"
+NOTE: If using "make" results in "clock skew detected", do "touch *" to update the time stamp, or wait for the defined amount of time.
+
+Run client on CSE04 with ./ufclient
+Run server on CSE03 with ./ufserver
+Ensure both client and server are using the same destination port.
+Test using the provided test file named "test", or own test files.
+
+16 Bit checksum is based on the BSD-16 Bit checksum https://en.wikipedia.org/wiki/BSD_checksum
