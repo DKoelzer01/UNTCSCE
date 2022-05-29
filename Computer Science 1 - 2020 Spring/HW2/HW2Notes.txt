@@ -1,0 +1,33 @@
+Author: Daniel Koelzer (danielkoelzer@my.unt.edu)
+Date: February 23, 2020
+Instructor: Joseph Helsing
+Description: Homework 2. Paintball game.
+
+Create paintball game on a 10x10 (0-9,0-9) grid.
+Place 1 enemy and 1 friendly.
+Prompt the player to either Shoot or Search a location.
+Shoot 	- Enemy - Friendly - None
+		  Win	  Lose		 -1 try
+
+Search 	- Enemy	- Friendly - None
+		  Lose	  Try x2	 -1 try
+		  
+		  
+Set constant "size" = 10
+Pick 2 random spots using [rand()%10] for friendly and enemy X Y positions.
+Implement logical check for player choice using outcomes above.
+
+Using ANSI color codes for style / readability.
+Syntax : 	\033 - ESC character 
+			[ declares start of ANSI coding. 
+			1st digit is format digit. Using 1 for Bold, 0 for reset formatting.
+			;30 - ;37 correspond to different foreground colors.
+			
+Ex: \033[1;31mGame over!!!\033[0m
+results in a string "Game over!!!" in bold red text.
+
+Implement error and bounds checking regularly to insure proper execution.
+
+**Check for cheating when searching for ally. Prevent player from getting infinite lives.**
+
+
