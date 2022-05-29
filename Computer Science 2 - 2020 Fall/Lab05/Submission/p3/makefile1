@@ -1,0 +1,3 @@
+cc = gcc
+sum: main.c sum.c
+	$(cc) -o sum main.o sum.o
