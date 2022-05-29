@@ -1,0 +1,18 @@
+total 64
+drwxrwx--- 2 dlk0138 dlk0138 4096 Jan 30  2020 HW1
+drwx------ 2 dlk0138 dlk0138 4096 Feb 23  2020 HW2
+drwxrwx--- 2 dlk0138 dlk0138 4096 Apr 17  2020 HW3
+drwxrwx--- 2 dlk0138 dlk0138 4096 Apr 17  2020 HW4
+drwxrwx--- 2 dlk0138 dlk0138 4096 Mar  2  2020 Junk
+drwx------ 3 dlk0138 dlk0138 4096 Jan 13  2020 Lab01
+drwxrwx--- 2 dlk0138 dlk0138 4096 Jan 27  2020 Lab02
+drwxrwx--- 2 dlk0138 dlk0138 4096 Jan 27  2020 Lab03
+drwxrwx--- 2 dlk0138 dlk0138 4096 Feb 10  2020 Lab04
+drwxrwx--- 2 dlk0138 dlk0138 4096 Feb 17  2020 Lab05
+drwxrwx--- 2 dlk0138 dlk0138 4096 Mar  2  2020 Lab06
+drwxrwx--- 2 dlk0138 dlk0138 4096 Mar 25  2020 Lab07
+drwxrwx--- 2 dlk0138 dlk0138 4096 Mar 26  2020 Lab08
+drwxrwx--- 2 dlk0138 dlk0138 4096 Apr 10  2020 Lab09
+drwxrwx--- 2 dlk0138 dlk0138 4096 Apr 16  2020 Lab10
+-rw-rw---- 1 dlk0138 dlk0138  176 Feb 10  2020 SampleFile.cpp
+-rw------- 1 dlk0138 dlk0138    0 Sep 20 20:48 sedfile.txt

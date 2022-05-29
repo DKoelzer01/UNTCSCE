@@ -1,0 +1,5 @@
+Name: Dongus
+Number of Canvas: 2
+Number of Paint Brushes: 10
+Cups of Water: 6
+Tubes of Paint: 13
