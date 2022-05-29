@@ -1,0 +1,636 @@
+Script started on 2021-09-20 20:50:18-0500
+]0;dlk0138@cse02: ~dlk0138@cse02:~$ ls
+[0m[01;34mCSCE1030[0m  [01;34mCSCE1040[0m  [01;34mCSCE2110[0m  [01;34mCSCE2610[0m  [01;34mCSCE3600[0m  grades  [01;34mpublic_html[0m  RecAssignment3
+]0;dlk0138@cse02: ~dlk0138@cse02:~$ cd CSCE 1 0 4 0 
+]0;dlk0138@cse02: ~/CSCE1040dlk0138@cse02:~/CSCE1040$ ls
+[0m[01;34mExam1[0m  [01;34mExam2[0m  [01;34mExam3[0m  [01;34mHW1[0m  [01;34mHW3[0m  [01;34mHW4[0m  [01;34mLab01[0m  [01;34mLab05[0m
+]0;dlk0138@cse02: ~/CSCE1040dlk0138@cse02:~/CSCE1040$ cd HW4
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ ;s[K[Kls
+Book.cpp  CD.cpp  DVD.cpp  LibraryItem.cpp  LibraryItems.cpp  Loan.cpp  Loans.cpp  main.cpp  Patron.cpp  Patrons.cpp  testinput
+Book.h    CD.h    DVD.h    LibraryItem.h    LibraryItems.h    Loan.h    Loans.h    Makefile  Patron.h    Patrons.h
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ lscd HW4[4Plscd CSCE1040 ls[Kexit[2Pls -l >sedfile.txt[Kcd CSCE1030ls[Kexit[2Plscd contagionls[Kcd CSCE2110ls[Kmake clean./prog4.out3.out4.out[1Pmake cleanls[Kcd CSCE2110ls[Kcd contagionls[Kexit[2Plscd CSCE1030ls[K -l >sedfile.txt[K -l >sedfile.txt sedfile.txt
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ sed --[Ki "s/^-?[K/R/g" sedfile.txt
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ sed -n 1,10p sedfile.txt
+total 132
+Rrw-rw---- 1 dlk0138 dlk0138  2214 Nov 25  2020 Book.cpp
+Rrw-rw---- 1 dlk0138 dlk0138   764 Nov 25  2020 Book.h
+Rrw-rw---- 1 dlk0138 dlk0138  2476 Nov 25  2020 CD.cpp
+Rrw-rw---- 1 dlk0138 dlk0138   861 Nov 24  2020 CD.h
+Rrw-rw---- 1 dlk0138 dlk0138  2530 Nov 25  2020 DVD.cpp
+Rrw-rw---- 1 dlk0138 dlk0138   873 Nov 24  2020 DVD.h
+Rrw-rw---- 1 dlk0138 dlk0138  1195 Nov 25  2020 LibraryItem.cpp
+Rrw-rw---- 1 dlk0138 dlk0138  1041 Nov 25  2020 LibraryItem.h
+Rrw-rw---- 1 dlk0138 dlk0138 29400 Nov 25  2020 LibraryItems.cpp
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ sed 0[K-i 1d sedfile.txt
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ sed -i '?[K/CD.h/a This is a new line' sedfile.txt
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ sed -n 1,10p sedfile.txt
+Rrw-rw---- 1 dlk0138 dlk0138  2214 Nov 25  2020 Book.cpp
+Rrw-rw---- 1 dlk0138 dlk0138   764 Nov 25  2020 Book.h
+Rrw-rw---- 1 dlk0138 dlk0138  2476 Nov 25  2020 CD.cpp
+Rrw-rw---- 1 dlk0138 dlk0138   861 Nov 24  2020 CD.h
+This is a new line
+Rrw-rw---- 1 dlk0138 dlk0138  2530 Nov 25  2020 DVD.cpp
+Rrw-rw---- 1 dlk0138 dlk0138   873 Nov 24  2020 DVD.h
+Rrw-rw---- 1 dlk0138 dlk0138  1195 Nov 25  2020 LibraryItem.cpp
+Rrw-rw---- 1 dlk0138 dlk0138  1041 Nov 25  2020 LibraryItem.h
+Rrw-rw---- 1 dlk0138 dlk0138 29400 Nov 25  2020 LibraryItems.cpp
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ ps -ef > gawkfile.txt
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ gawk 'NR <= 10' gawkfile.txt
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Aug04 ?        00:01:28 /sbin/init splash
+root         2     0  0 Aug04 ?        00:00:00 [kthreadd]
+root         4     2  0 Aug04 ?        00:00:00 [kworker/0:0H]
+root         6     2  0 Aug04 ?        00:00:00 [mm_percpu_wq]
+root         7     2  0 Aug04 ?        00:00:03 [ksoftirqd/0]
+root         8     2  0 Aug04 ?        00:06:35 [rcu_sched]
+root         9     2  0 Aug04 ?        00:00:00 [rcu_bh]
+root        10     2  0 Aug04 ?        00:00:00 [migration/0]
+root        11     2  0 Aug04 ?        00:00:06 [watchdog/0]
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ gawk 'END <[K{print NR}' gawkfile.txt
+229
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ gawk '/dlk0138/{print NR, $0}/[K' gawkfile.txt
+172 root     23729  2360  0 20:46 ?        00:00:00 sshd: dlk0138 [priv]
+173 dlk0138  23818 23729  0 20:46 ?        00:00:00 sshd: dlk0138@pts/10
+174 dlk0138  23819 23818  0 20:46 pts/10   00:00:00 -bash
+185 root     25100  2360  0 20:49 ?        00:00:00 sshd: dlk0138 [priv]
+186 dlk0138  25155 25100  0 20:49 ?        00:00:00 sshd: dlk0138@notty
+187 dlk0138  25162 25155  0 20:49 ?        00:00:00 /usr/lib/openssh/sftp-server
+188 dlk0138  25468 23819  0 20:50 pts/10   00:00:00 script RecAssignment3
+189 dlk0138  25469 25468  0 20:50 pts/12   00:00:00 bash -i
+212 dlk0138  27520 25469  0 20:55 pts/12   00:00:00 ps -ef
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ gawk 'NF > 8 {print NR, NF}' gawkfile.txt
+2 9
+66 11
+68 10
+75 14
+76 9
+77 12
+78 9
+79 9
+80 10
+81 9
+82 9
+83 9
+85 9
+86 10
+87 10
+88 10
+89 9
+90 9
+92 10
+93 15
+94 9
+95 9
+96 18
+97 15
+98 10
+99 35
+100 12
+101 15
+103 12
+104 9
+105 9
+106 10
+108 9
+110 9
+111 9
+112 9
+114 9
+116 12
+117 9
+118 9
+119 9
+120 9
+121 9
+123 10
+125 9
+127 10
+128 9
+133 10
+134 9
+136 9
+137 10
+138 9
+140 10
+141 9
+143 10
+144 9
+147 9
+149 10
+150 9
+152 10
+153 10
+154 9
+156 9
+168 10
+169 9
+170 9
+172 10
+173 9
+175 10
+176 9
+182 10
+183 9
+185 10
+186 9
+188 9
+189 9
+192 10
+193 9
+196 9
+199 10
+200 10
+201 9
+202 10
+204 9
+205 9
+209 9
+210 9
+211 9
+212 9
+213 10
+214 9
+216 9
+219 47
+220 10
+221 9
+223 10
+224 9
+226 10
+227 9
+229 9
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ gawk 'NF > 8{for(i = 0[K9; i < [K= NF; i}}[K[K{{[K[K++) print NR, NF, $i}' gawkfile.txt
+2 9 splash
+66 11 /run/vmblock-fuse
+66 11 -o
+66 11 rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+68 10 -f
+68 10 -w
+75 14 --system
+75 14 --address=systemd:
+75 14 --nofork
+75 14 --nopidfile
+75 14 --systemd-activation
+75 14 --syslog-only
+76 9 --no-daemon
+77 12 -u
+77 12 -s
+77 12 -O
+77 12 /run/wpa_supplicant
+78 9 --foreground
+79 9 --filter-policy=strict
+80 10 /usr/bin/networkd-dispatcher
+80 10 --run-startup-triggers
+81 9 -f
+82 9 -f
+83 9 -n
+85 9 --no-debug
+86 10 running
+86 10 [cse02.local]
+87 10 chroot
+87 10 helper
+88 10 /usr/share/unattended-upgrades/unattended-upgrade-shutdown
+88 10 --wait-for-signal
+89 9 -f
+90 9 --test
+92 10 --pid-file
+92 10 /var/run/autofs.pid
+93 15 -o
+93 15 -p
+93 15 --
+93 15 \u
+93 15 --noclear
+93 15 tty1
+93 15 linux
+94 9 --no-daemon
+95 9 /usr/share/xdiagnose/failsafeXServer
+96 18 /usr/share/xdiagnose/failsafeXinit
+96 18 /etc/X11/xorg.conf.failsafe
+96 18 --
+96 18 /usr/bin/X
+96 18 -br
+96 18 -once
+96 18 -config
+96 18 /etc/X11/xorg.conf.failsafe
+96 18 -logfile
+96 18 /var/log/Xorg.failsafe.log
+97 15 :0
+97 15 -br
+97 15 -once
+97 15 -config
+97 15 /etc/X11/xorg.conf.failsafe
+97 15 -logfile
+97 15 /var/log/Xorg.failsafe.log
+98 10 /usr/share/xdiagnose/failsafeXinit
+98 10 /etc/X11/xorg.conf.failsafe
+99 35 --warning
+99 35 --text
+99 35 <big><b>The
+99 35 system
+99 35 is
+99 35 running
+99 35 in
+99 35 low-graphics
+99 35 mode</b></big>\n\nYour
+99 35 screen,
+99 35 graphics
+99 35 card,
+99 35 and
+99 35 input
+99 35 device
+99 35 settings\ncould
+99 35 not
+99 35 be
+99 35 detected
+99 35 correctly.
+99 35 You
+99 35 will
+99 35 need
+99 35 to
+99 35 configure
+99 35 these
+99 35 yourself.
+100 12 --autolaunch
+100 12 f9036225746bfd38d2c7d4874c752c38
+100 12 --binary-syntax
+100 12 --close-stderr
+101 15 --syslog-only
+101 15 --fork
+101 15 --print-pid
+101 15 5
+101 15 --print-address
+101 15 7
+101 15 --session
+103 12 --config-file=/usr/share/defaults/at-spi2/accessibility.conf
+103 12 --nofork
+103 12 --print-address
+103 12 3
+104 9 --use-gnome-session
+105 9 -D
+106 10 bts0117
+106 10 [priv]
+108 9 bts0117@pts/7
+110 9 -s
+111 9 -s
+112 9 -s
+114 9 -l
+116 12 /usr/sbin/denyhosts
+116 12 --daemon
+116 12 --purge
+116 12 --config=/etc/denyhosts.conf
+117 9 -s
+118 9 -s
+119 9 -s
+120 9 -s
+121 9 -s
+123 10 dpk0032
+123 10 [priv]
+125 9 dpk0032@notty
+127 10 dpk0032
+127 10 [priv]
+128 9 dpk0032@notty
+133 10 dhb0044
+133 10 [priv]
+134 9 dhb0044@pts/11
+136 9 callback]
+137 10 jmw0545
+137 10 [priv]
+138 9 jmw0545@notty
+140 10 jmw0545
+140 10 [priv]
+141 9 jmw0545@pts/13
+143 10 dhs0054
+143 10 [priv]
+144 9 dhs0054@pts/14
+147 9 Lab4B.cpp
+149 10 kv0216
+149 10 [priv]
+150 9 kv0216@notty
+152 10 kv0216
+152 10 [priv]
+153 10 mms0326
+153 10 [priv]
+154 9 kv0216@notty
+156 9 mms0326@pts/4
+168 10 bod0011
+168 10 [priv]
+169 9 --no-notify
+170 9 bod0011@pts/5
+172 10 dlk0138
+172 10 [priv]
+173 9 dlk0138@pts/10
+175 10 llb0248
+175 10 [priv]
+176 9 llb0248@notty
+182 10 msb0278
+182 10 [priv]
+183 9 msb0278@pts/15
+185 10 dlk0138
+185 10 [priv]
+186 9 dlk0138@notty
+188 9 RecAssignment3
+189 9 -i
+192 10 clh0566
+192 10 [priv]
+193 9 clh0566@pts/3
+196 9 -i
+199 10 localadmin
+199 10 [priv]
+200 10 mms0326
+200 10 [priv]
+201 9 localadmin@pts/1
+202 10 localadmin
+202 10 [priv]
+204 9 mms0326@notty
+205 9 localadmin@notty
+209 9 [accepted]
+210 9 [accepted]
+211 9 1
+212 9 -ef
+213 10 localadmin
+213 10 [priv]
+214 9 localadmin@pts/0
+216 9 su
+219 47 -c
+219 47 while
+219 47 [
+219 47 -d
+219 47 /proc/$PPID
+219 47 ];
+219 47 do
+219 47 sleep
+219 47 1;head
+219 47 -v
+219 47 -n
+219 47 8
+219 47 /proc/meminfo;
+219 47 head
+219 47 -v
+219 47 -n
+219 47 2
+219 47 /proc/stat
+219 47 /proc/version
+219 47 /proc/uptime
+219 47 /proc/loadavg
+219 47 /proc/sys/fs/file-nr
+219 47 /proc/sys/kernel/hostname;
+219 47 tail
+219 47 -v
+219 47 -n
+219 47 16
+219 47 /proc/net/dev;echo
+219 47 '==>
+219 47 /proc/df
+219 47 <==';df;echo
+219 47 '==>
+219 47 /proc/who
+219 47 <==';who;echo
+219 47 '==>
+219 47 /proc/end
+219 47 <==';echo
+219 47 '##Moba##';
+219 47 done
+220 10 crg0224
+220 10 [priv]
+221 9 crg0224@pts/8
+223 10 crg0224
+223 10 [priv]
+224 9 crg0224@notty
+226 10 bee0051
+226 10 [priv]
+227 9 bee0051@pts/2
+229 9 main.cpp
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ gawk 'BEGIN {OFS = "\t"}; {print $1, $3, $2, %$[K[K$3[K4, $5, $6, $7, $8}' gawkfile.txt
+UID	PPID	PID	C	STIME	TTY	TIME	CMD
+root	0	1	0	Aug04	?	00:01:28	/sbin/init
+root	0	2	0	Aug04	?	00:00:00	[kthreadd]
+root	2	4	0	Aug04	?	00:00:00	[kworker/0:0H]
+root	2	6	0	Aug04	?	00:00:00	[mm_percpu_wq]
+root	2	7	0	Aug04	?	00:00:03	[ksoftirqd/0]
+root	2	8	0	Aug04	?	00:06:35	[rcu_sched]
+root	2	9	0	Aug04	?	00:00:00	[rcu_bh]
+root	2	10	0	Aug04	?	00:00:00	[migration/0]
+root	2	11	0	Aug04	?	00:00:06	[watchdog/0]
+root	2	12	0	Aug04	?	00:00:00	[cpuhp/0]
+root	2	13	0	Aug04	?	00:00:00	[cpuhp/1]
+root	2	14	0	Aug04	?	00:00:06	[watchdog/1]
+root	2	15	0	Aug04	?	00:00:00	[migration/1]
+root	2	16	0	Aug04	?	00:01:28	[ksoftirqd/1]
+root	2	18	0	Aug04	?	00:00:00	[kworker/1:0H]
+root	2	19	0	Aug04	?	00:00:00	[cpuhp/2]
+root	2	20	0	Aug04	?	00:00:08	[watchdog/2]
+root	2	21	0	Aug04	?	00:00:00	[migration/2]
+root	2	22	0	Aug04	?	00:00:02	[ksoftirqd/2]
+root	2	24	0	Aug04	?	00:00:00	[kworker/2:0H]
+root	2	25	0	Aug04	?	00:00:00	[kdevtmpfs]
+root	2	26	0	Aug04	?	00:00:00	[netns]
+root	2	27	0	Aug04	?	00:00:00	[rcu_tasks_kthre]
+root	2	28	0	Aug04	?	00:00:00	[kauditd]
+root	2	32	0	Aug04	?	00:00:04	[khungtaskd]
+root	2	33	0	Aug04	?	00:00:00	[oom_reaper]
+root	2	34	0	Aug04	?	00:00:00	[writeback]
+root	2	35	0	Aug04	?	00:00:00	[kcompactd0]
+root	2	36	0	Aug04	?	00:00:00	[ksmd]
+root	2	37	0	Aug04	?	00:00:00	[khugepaged]
+root	2	38	0	Aug04	?	00:00:00	[crypto]
+root	2	39	0	Aug04	?	00:00:00	[kintegrityd]
+root	2	40	0	Aug04	?	00:00:00	[kblockd]
+root	2	41	0	Aug04	?	00:00:00	[ata_sff]
+root	2	42	0	Aug04	?	00:00:00	[md]
+root	2	43	0	Aug04	?	00:00:00	[edac-poller]
+root	2	44	0	Aug04	?	00:00:00	[devfreq_wq]
+root	2	45	0	Aug04	?	00:00:00	[watchdogd]
+root	2	48	0	Aug04	?	00:00:03	[kswapd0]
+root	2	49	0	Aug04	?	00:00:00	[kworker/u7:0]
+root	2	50	0	Aug04	?	00:00:00	[ecryptfs-kthrea]
+root	2	92	0	Aug04	?	00:00:00	[kthrotld]
+root	2	93	0	Aug04	?	00:00:00	[acpi_thermal_pm]
+root	2	95	0	Aug04	?	00:00:00	[scsi_eh_0]
+root	2	96	0	Aug04	?	00:00:00	[scsi_tmf_0]
+root	2	97	0	Aug04	?	00:00:00	[scsi_eh_1]
+root	2	98	0	Aug04	?	00:00:00	[scsi_tmf_1]
+root	2	100	0	Aug04	?	00:00:00	[ipv6_addrconf]
+root	2	110	0	Aug04	?	00:00:00	[kstrp]
+root	2	127	0	Aug04	?	00:00:00	[charger_manager]
+root	2	191	0	Aug04	?	00:00:00	[mpt_poll_0]
+root	2	192	0	Aug04	?	00:00:00	[mpt/0]
+root	2	198	0	Aug04	?	00:00:00	[scsi_eh_2]
+root	2	199	0	Aug04	?	00:00:00	[scsi_tmf_2]
+root	2	200	0	Aug04	?	00:00:00	[ttm_swap]
+root	2	201	0	Aug04	?	00:00:00	[irq/16-vmwgfx]
+root	2	203	0	Aug04	?	00:00:21	[kworker/0:1H]
+root	2	204	0	Aug04	?	00:00:04	[kworker/2:1H]
+root	2	274	0	Aug04	?	00:01:00	[jbd2/sda1-8]
+root	2	275	0	Aug04	?	00:00:00	[ext4-rsv-conver]
+root	1	325	0	Aug04	?	00:24:06	/lib/systemd/systemd-journald
+root	2	339	0	Aug04	?	00:00:00	[rpciod]
+root	2	340	0	Aug04	?	00:00:00	[xprtiod]
+root	1	352	0	Aug04	?	00:00:08	/lib/systemd/systemd-udevd
+root	1	393	0	Aug04	?	00:00:01	vmware-vmblock-fuse
+systemd+	1	588	0	Aug04	?	00:00:09	/lib/systemd/systemd-resolved
+root	1	589	0	Aug04	?	00:00:05	/sbin/rpcbind
+systemd+	1	591	0	Aug04	?	00:00:06	/lib/systemd/systemd-timesyncd
+root	1	624	0	Aug04	?	00:00:00	/usr/bin/VGAuthService
+root	1	629	0	Aug04	?	00:41:05	/usr/bin/vmtoolsd
+root	1	679	0	Aug04	?	00:05:20	/usr/lib/accountsservice/accounts-daemon
+root	1	681	0	Aug04	?	00:00:11	/lib/systemd/systemd-logind
+root	1	685	0	Aug04	?	00:00:17	/usr/lib/udisks2/udisksd
+message+	1	686	0	Aug04	?	00:03:20	/usr/bin/dbus-daemon
+root	1	786	0	Aug04	?	00:00:02	/usr/sbin/NetworkManager
+root	1	789	0	Aug04	?	00:00:13	/sbin/wpa_supplicant
+root	1	790	0	Aug04	?	00:01:55	/usr/sbin/irqbalance
+root	1	791	0	Aug04	?	00:00:00	/usr/sbin/ModemManager
+root	1	792	0	Aug04	?	00:00:00	/usr/bin/python3
+daemon	1	795	0	Aug04	?	00:00:00	/usr/sbin/atd
+root	1	802	0	Aug04	?	00:00:07	/usr/sbin/cron
+syslog	1	804	0	Aug04	?	00:03:12	/usr/sbin/rsyslogd
+root	1	814	0	Aug04	?	00:00:00	/usr/sbin/acpid
+root	1	883	0	Aug04	?	00:01:07	/usr/lib/policykit-1/polkitd
+avahi	1	963	0	Aug04	?	00:01:39	avahi-daemon:
+avahi	963	982	0	Aug04	?	00:00:00	avahi-daemon:
+root	1	996	0	Aug04	?	00:00:00	/usr/bin/python3
+whoopsie	1	1033	0	Aug04	?	00:00:00	/usr/bin/whoopsie
+kernoops	1	1050	0	Aug04	?	00:01:09	/usr/sbin/kerneloops
+kernoops	1	1052	0	Aug04	?	00:01:09	/usr/sbin/kerneloops
+root	1	1053	0	Aug04	?	00:01:14	/usr/sbin/automount
+root	1	1056	0	Aug04	tty1	00:00:00	/sbin/agetty
+root	1	1123	0	Aug04	?	00:00:57	/usr/sbin/console-kit-daemon
+root	1	1946	0	Aug04	?	00:00:00	/bin/bash
+root	1946	1957	0	Aug04	?	00:00:00	xinit
+root	1957	1958	0	Aug04	tty2	00:00:00	/usr/lib/xorg/Xorg
+root	1957	1969	0	Aug04	?	00:00:00	/bin/bash
+root	1969	1976	0	Aug04	?	00:00:00	zenity
+root	1	1986	0	Aug04	?	00:00:00	dbus-launch
+root	1	1987	0	Aug04	?	00:00:00	/usr/bin/dbus-daemon
+root	1	1989	0	Aug04	?	00:00:00	/usr/lib/at-spi2-core/at-spi-bus-launcher
+root	1989	1994	0	Aug04	?	00:00:00	/usr/bin/dbus-daemon
+root	1	1996	0	Aug04	?	00:00:00	/usr/lib/at-spi2-core/at-spi2-registryd
+root	1	2360	0	Aug13	?	00:03:04	/usr/sbin/sshd
+root	2360	3305	0	19:56	?	00:00:00	sshd:
+root	2	3334	0	Aug04	?	00:00:00	[nfsiod]
+bts0117	3305	3462	0	19:56	?	00:00:00	sshd:
+bts0117	3462	3468	0	19:56	pts/7	00:00:00	-bash
+ds0685	1	3727	0	Sep18	?	00:00:00	ssh-agent
+ds0685	1	3742	0	Sep18	?	00:00:00	ssh-agent
+ds0685	1	3763	0	Sep18	?	00:00:00	ssh-agent
+root	2	6840	0	20:05	?	00:00:15	[kworker/u6:0]
+root	1	7687	0	00:08	?	00:00:00	/usr/sbin/cupsd
+root	1	7688	0	00:08	?	00:00:00	/usr/sbin/cups-browsed
+root	1	7706	6	00:08	?	01:15:54	python
+hgf0016	1	9195	0	Sep11	?	00:00:00	ssh-agent
+hgf0016	1	9196	0	Sep11	?	00:00:00	ssh-agent
+hgf0016	1	9208	0	Sep11	?	00:00:00	ssh-agent
+hgf0016	1	9209	0	Sep11	?	00:00:00	ssh-agent
+hgf0016	1	9373	0	Sep11	?	00:00:00	ssh-agent
+hgf0016	1	9424	0	Sep11	?	00:00:00	ssh-agent
+root	2360	9562	0	20:12	?	00:00:00	sshd:
+hgf0016	1	9616	0	Sep11	?	00:00:00	ssh-agent
+dpk0032	9562	9624	0	20:12	?	00:00:00	sshd:
+dpk0032	9624	9631	0	20:12	?	00:00:00	/usr/lib/openssh/sftp-server
+root	2360	10564	0	20:15	?	00:00:00	sshd:
+dpk0032	10564	10619	0	20:15	?	00:00:00	sshd:
+dpk0032	10619	10626	0	20:15	?	00:00:00	/usr/lib/openssh/sftp-server
+root	2	10848	0	Sep18	?	00:00:25	[kworker/1:2H]
+root	2	11595	0	16:15	?	00:00:00	[kworker/2:2]
+root	1	12831	0	Aug05	?	00:00:14	/usr/lib/packagekit/packagekitd
+root	2360	13257	0	20:22	?	00:00:00	sshd:
+dhb0044	13257	13366	0	20:22	?	00:00:00	sshd:
+dhb0044	13366	13367	0	20:22	pts/11	00:00:00	-bash
+root	2	14154	0	Aug25	?	00:00:00	[NFSv4
+root	2360	14159	0	20:23	?	00:00:00	sshd:
+jmw0545	14159	14222	0	20:23	?	00:00:00	sshd:
+jmw0545	14222	14223	0	20:23	?	00:00:00	/usr/lib/openssh/sftp-server
+root	2360	14343	0	20:24	?	00:00:00	sshd:
+jmw0545	14343	14478	0	20:24	?	00:00:00	sshd:
+jmw0545	14478	14479	0	20:24	pts/13	00:00:00	-bash
+root	2360	15294	0	20:26	?	00:00:00	sshd:
+dhs0054	15294	15402	0	20:26	?	00:00:00	sshd:
+dhs0054	15402	15403	0	20:26	pts/14	00:00:00	-bash
+root	2	16616	0	20:29	?	00:00:00	[kworker/0:1]
+dhs0054	15403	16874	0	20:29	pts/14	00:00:00	nano
+root	2	19574	1	20:36	?	00:00:17	[kworker/u6:3]
+root	2360	21293	0	11:42	?	00:00:00	sshd:
+kv0216	21293	21359	0	11:42	?	00:00:00	sshd:
+kv0216	21359	21360	0	11:42	?	00:00:00	/usr/lib/openssh/sftp-server
+root	2360	21515	0	11:46	?	00:00:00	sshd:
+root	2360	21551	0	20:41	?	00:00:00	sshd:
+kv0216	21515	21570	0	11:46	?	00:00:00	sshd:
+kv0216	21570	21571	0	11:46	?	00:00:00	/usr/lib/openssh/sftp-server
+mms0326	21551	21776	0	20:41	?	00:00:00	sshd:
+mms0326	21776	21777	0	20:41	pts/4	00:00:00	-bash
+root	2	22222	0	20:42	?	00:00:00	[kworker/1:2]
+root	2	22762	0	Aug05	?	00:00:00	[xfsalloc]
+root	2	22764	0	Aug05	?	00:00:00	[xfs_mru_cache]
+root	2	22775	0	Aug05	?	00:00:00	[jfsIO]
+root	2	22776	0	Aug05	?	00:00:00	[jfsCommit]
+root	2	22777	0	Aug05	?	00:00:00	[jfsCommit]
+root	2	22778	0	Aug05	?	00:00:00	[jfsCommit]
+root	2	22779	0	Aug05	?	00:00:00	[jfsSync]
+root	2	23419	0	20:45	?	00:00:00	[kworker/2:0]
+root	2	23421	0	20:45	?	00:00:00	[kworker/0:0]
+root	2360	23539	0	19:25	?	00:00:00	sshd:
+statd	1	23588	0	Aug25	?	00:00:00	/sbin/rpc.statd
+bod0011	23539	23660	0	19:25	?	00:00:00	sshd:
+bod0011	23660	23667	0	19:25	pts/5	00:00:00	-bash
+root	2360	23729	0	20:46	?	00:00:00	sshd:
+dlk0138	23729	23818	0	20:46	?	00:00:00	sshd:
+dlk0138	23818	23819	0	20:46	pts/10	00:00:00	-bash
+root	2360	23992	0	13:26	?	00:00:00	sshd:
+llb0248	23992	24059	0	13:26	?	00:00:00	sshd:
+llb0248	24059	24060	0	13:26	?	00:00:00	/usr/lib/openssh/sftp-server
+jrg0354	1	24063	0	Sep07	?	00:00:01	tmux
+jrg0354	24063	24064	0	Sep07	pts/17	00:00:00	-bash
+jrg0354	24063	24085	0	Sep07	pts/18	00:00:00	-bash
+root	2	24269	0	20:47	?	00:00:00	[kworker/1:1]
+root	2360	24561	0	20:48	?	00:00:00	sshd:
+msb0278	24561	24738	0	20:48	?	00:00:00	sshd:
+msb0278	24738	24739	0	20:48	pts/15	00:00:00	-bash
+root	2360	25100	0	20:49	?	00:00:00	sshd:
+dlk0138	25100	25155	0	20:49	?	00:00:00	sshd:
+dlk0138	25155	25162	0	20:49	?	00:00:00	/usr/lib/openssh/sftp-server
+dlk0138	23819	25468	0	20:50	pts/10	00:00:00	script
+dlk0138	25468	25469	0	20:50	pts/12	00:00:00	bash
+root	2	25822	0	20:51	?	00:00:00	[kworker/2:1]
+root	2	25838	0	19:31	?	00:00:14	[kworker/u6:1]
+root	2360	25909	0	19:31	?	00:00:00	sshd:
+clh0566	25909	26030	0	19:31	?	00:00:00	sshd:
+clh0566	26030	26031	0	19:31	pts/3	00:00:00	-bash
+clh0566	26031	26127	0	19:31	pts/3	00:00:00	script
+clh0566	26127	26128	0	19:31	pts/6	00:00:00	bash
+root	2	26145	0	20:52	?	00:00:00	[kworker/0:2]
+root	2	26788	0	20:53	?	00:00:00	[kworker/1:0]
+root	2360	27155	0	15:02	?	00:00:00	sshd:
+root	2360	27205	0	20:54	?	00:00:00	sshd:
+localad+	27155	27210	0	15:02	?	00:00:21	sshd:
+root	2360	27211	0	15:02	?	00:00:00	sshd:
+localad+	27210	27212	0	15:02	pts/1	00:00:00	-bash
+mms0326	27205	27293	0	20:54	?	00:00:00	sshd:
+localad+	27211	27300	0	15:02	?	00:00:00	sshd:
+localad+	27300	27301	0	15:02	?	00:00:00	/usr/lib/openssh/sftp-server
+mms0326	27293	27303	0	20:54	?	00:00:00	/usr/lib/openssh/sftp-server
+jmw0545	14479	27454	98	20:55	pts/13	00:00:08	./prog1
+root	2360	27481	0	20:55	?	00:00:00	sshd:
+root	2360	27494	0	20:55	?	00:00:00	sshd:
+localad+	28699	27519	0	20:55	?	00:00:00	sleep
+dlk0138	25469	27520	0	20:55	pts/12	00:00:00	ps
+root	2360	28590	0	15:36	?	00:00:00	sshd:
+localad+	28590	28645	0	15:36	?	00:00:00	sshd:
+localad+	28645	28646	0	15:36	pts/0	00:00:00	-bash
+root	28646	28678	0	15:37	pts/0	00:00:00	sudo
+root	28678	28679	0	15:37	pts/0	00:00:00	su
+root	28679	28686	0	15:37	pts/0	00:00:00	bash
+localad+	27210	28699	0	15:37	?	00:00:23	bash
+root	2360	29462	0	18:18	?	00:00:00	sshd:
+crg0224	29462	29588	0	18:18	?	00:00:00	sshd:
+crg0224	29588	29589	0	18:18	pts/8	00:00:00	-bash
+root	2360	29705	0	18:18	?	00:00:00	sshd:
+crg0224	29705	29796	0	18:18	?	00:00:00	sshd:
+crg0224	29796	29797	0	18:18	?	00:00:00	/usr/lib/openssh/sftp-server
+root	2360	31187	0	Sep19	?	00:00:00	sshd:
+bee0051	31187	31253	0	Sep19	?	00:00:00	sshd:
+bee0051	31253	31254	0	Sep19	pts/2	00:00:00	-bash
+bee0051	31254	31322	0	Sep19	pts/2	00:00:00	nano
+]0;dlk0138@cse02: ~/CSCE1040/HW4dlk0138@cse02:~/CSCE1040/HW4$ exit
+exit
+
+Script done on 2021-09-20 21:00:55-0500
